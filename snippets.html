@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction to Awkward arrays &#8212; Coffea Tutorial  documentation</title>
+    <title>Handy snippets &#8212; Unofficial Coffea Tutorial  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -13,10 +13,12 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="The basics of awkward arrays" href="notebooks/awkward/basic.html" />
-    <link rel="prev" title="Installing a coffea environment" href="installation.html" /> 
+    <link rel="next" title="Awkward array snippets" href="notebooks/snippet_awkward.html" />
+    <link rel="prev" title="Writting coffea Schema files" href="notebooks/coffeaschema.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -25,13 +27,13 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="notebooks/awkward/basic.html" title="The basics of awkward arrays"
+          <a href="notebooks/snippet_awkward.html" title="Awkward array snippets"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="installation.html" title="Installing a coffea environment"
+          <a href="notebooks/coffeaschema.html" title="Writting coffea Schema files"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Coffea Tutorial  documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Introduction to Awkward arrays</a></li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Unofficial Coffea Tutorial  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Handy snippets</a></li> 
       </ul>
     </div>  
 
@@ -40,15 +42,18 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="introduction-to-awkward-arrays">
-<h1>Introduction to Awkward arrays<a class="headerlink" href="#introduction-to-awkward-arrays" title="Permalink to this headline">¶</a></h1>
-<p>This is an gentler introduction to the peculiar syntax that is awkward arrays,
-which sits at the heart of how coffea can be both efficient to execute for a
-machines and efficient to write for a experienced programmer. For people coming
-from a more traditional loop-based programming syntax, the syntax will take some getting use to, but this tutorial can hopefully help you understand how to understand the syntax and how to understand the various method.</p>
+  <div class="section" id="handy-snippets">
+<h1>Handy snippets<a class="headerlink" href="#handy-snippets" title="Permalink to this headline">¶</a></h1>
+<p>In the notebooks below are a bunch of handy snippets that have been picked up
+throughout the analysis developments, which can serve as a good starting point
+to algorithms for your own analysis code.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/awkward/basic.html">The basics of awkward arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/snippet_awkward.html">Awkward array snippets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/snippet_awkward.html#Object-matching">Object matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/snippet_processor.html">Processor snippets</a></li>
 </ul>
 </div>
 </div>
@@ -61,15 +66,15 @@ from a more traditional loop-based programming syntax, the syntax will take some
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="installation.html"
-                        title="previous chapter">Installing a coffea environment</a></p>
+  <p class="topless"><a href="notebooks/coffeaschema.html"
+                        title="previous chapter">Writting coffea Schema files</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="notebooks/awkward/basic.html"
-                        title="next chapter">The basics of awkward arrays</a></p>
+  <p class="topless"><a href="notebooks/snippet_awkward.html"
+                        title="next chapter">Awkward array snippets</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/awkwardintro.rst.txt"
+      <li><a href="_sources/snippets.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -94,13 +99,13 @@ from a more traditional loop-based programming syntax, the syntax will take some
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="notebooks/awkward/basic.html" title="The basics of awkward arrays"
+          <a href="notebooks/snippet_awkward.html" title="Awkward array snippets"
              >next</a> |</li>
         <li class="right" >
-          <a href="installation.html" title="Installing a coffea environment"
+          <a href="notebooks/coffeaschema.html" title="Writting coffea Schema files"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Coffea Tutorial  documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Introduction to Awkward arrays</a></li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Unofficial Coffea Tutorial  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Handy snippets</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
